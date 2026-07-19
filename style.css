@@ -7,16 +7,16 @@ body {
     margin: 0;                       
     padding: 20px;                   
 }
-
+ 
 header {
     text-align: center;              
     margin-bottom: 30px;             
 }
-
+ 
 h1 {
     color: #1a1a1a;                 
 }
-
+ 
 section {
     display: flex;                   
     justify-content: center;         
@@ -24,10 +24,23 @@ section {
     flex-wrap: wrap;                
     margin-bottom: 40px;            
 }
-
-
+ 
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+ 
+button:hover {
+    background-color: #333333;
+}
+ 
 .caja-color {
-          
     border: 1px solid #dddddd;       
     border-radius: 8px;              
     width: 150px;                    
@@ -37,33 +50,12 @@ section {
     justify-content: center;         
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
 }
-
-.caja-color p {
+ 
+.caja-color p,
+.caja-color {
     font-weight: bold;               
-    background-color: rgba(255,255,255,0.8); 
-    padding: 5px 10px;               
-    border-radius: 4px;              
 }
-
-.caja-color:nth-child(1) {
-    background-color: #0000FF;
-}
-
-/* La segunda caja será Blanca */
-.caja-color:nth-child(2) {
-    background-color: #FFFFFF;
-}
-
-/* La tercera caja será Negra */
-.caja-color:nth-child(3) {
-    background-color: #000000;
-}
-
-/* La cuarta caja será Verde */
-.caja-color:nth-child(4) {
-    background-color: #008000;
-}
-
+ 
 footer {
     text-align: center;             
     border-top: 1px solid #cccccc;  
