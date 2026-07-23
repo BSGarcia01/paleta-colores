@@ -78,7 +78,7 @@ Ejemplos de prompts utilizados:
 
 ## 9. Repositorio
 - Repositorio: [repositorio](https://github.com/BSGarcia01/paleta-colores/tree/main)
-- Demo desplegada (GitHub Pages): [pages](https://bsgarcia01.github.io/paleta-colores/)
+- Demo desplegada (GitHub Pages): [pages](https://bsgarcia01.github.io/ProyectoM1_BrayanGarcia-/)
 
 ## Autor
 
