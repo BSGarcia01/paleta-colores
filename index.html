@@ -13,21 +13,22 @@
     </header>
     
     <main>
-        <h4>Cuantos colores quieres a vez?</h4>
+        <label for="tamano-paleta">¿Cuántos colores quieres a la vez?</label>
         <section>
-            <button id="boton-3">3 colores</button>
-            <button id="boton-6">6 colores</button>
-            <button id="boton-9">9 colores</button>
+            <select id="tamano-paleta">
+                <option value="6">6 colores</option>
+                <option value="8">8 colores</option>
+                <option value="9">9 colores</option>
+            </select>
+            <button id="generar-colores">Generar paleta</button>
         </section>
 
         <section id="paleta"></section>
-            
     </main>
     
     <footer>
         <p>Desarrollado by Bryan Garcia</p>
         <p>Redes sociales @stivengarciac</p>
-        <p>Numero de contacto 321899153</p>
     </footer>
 
     <script src="script.js"></script>

@@ -1,5 +1,4 @@
 
-
 body {
     font-family: Arial, sans-serif;  
     background-color: #f0f2f5;      
@@ -43,17 +42,24 @@ button:hover {
 .caja-color {
     border: 1px solid #dddddd;       
     border-radius: 8px;              
-    width: 150px;                    
-    height: 150px;                   
+    width: 170px;                    
+    height: 170px;                   
     display: flex;                   
     align-items: center;             
     justify-content: center;         
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
  
-.caja-color p,
 .caja-color {
-    font-weight: bold;               
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1.8;
+    word-break: break-word;
+    white-space: pre-line;
+    background-clip: padding-box;
 }
  
 footer {
@@ -62,4 +68,42 @@ footer {
     padding-top: 20px;               
     font-size: 14px;                 
     color: #666666;                
+}
+ 
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    animation: aparecer 0.3s ease;
+}
+ 
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+ 
+button:focus-visible,
+select:focus-visible {
+    outline: 3px solid #0066ff;
+    outline-offset: 2px;
+}
+
+.caja-color:focus-visible {
+    outline: 3px solid #0066ff;
+    outline-offset: 2px;
 }
