@@ -54,8 +54,8 @@ ProyectoM1_BryanGarcia/
 ## 7. Funcionalidades principales
 - Generación aleatoria de color (HEX): se construye un código hexadecimal de 6 caracteres eligiendo al azar entre 0123456789ABCDEF.
 - Conversión a HSL: cada color generado en HEX se convierte matemáticamente a su equivalente HSL (Matiz, Saturación, Luminosidad), pasando primero por RGB.
-- Selección de cantidad: un <select> permite elegir el tamaño de la paleta sin disparar ninguna acción hasta presionar "Generar paleta".
-- Renderizado dinámico del DOM: por cada color generado, se crea un <div> nuevo con document.createElement, se le asigna el color de fondo y el texto correspondiente, y se inserta en el contenedor de la paleta.
+- Selección de cantidad: un `<select>` permite elegir el tamaño de la paleta sin disparar ninguna acción hasta presionar "Generar paleta".
+- Renderizado dinámico del DOM: por cada color generado, se crea un `<div>` nuevo con document.createElement, se le asigna el color de fondo y el texto correspondiente, y se inserta en el contenedor de la paleta.
 - Reemplazo de resultados: antes de generar una nueva paleta, se limpia el contenedor anterior (innerHTML = ""), evitando que las cajas se acumulen entre clics.
 - Copiado al portapapeles con feedback visual: cada caja de color tiene su propio evento de clic que copia el código HEX usando `navigator.clipboard.writeText()`. Al copiarse, se muestra un mensaje flotante tipo "toast" mediante una función reutilizable (`mostrarMensaje`), que se elimina automáticamente después de 2 segundos usando `setTimeout()`.
 - Cálculo de contraste (accesibilidad): se calcula la luminancia percibida de cada color generado (fórmula ponderada sobre R, G, B) para decidir si el texto debe mostrarse en negro o blanco, asegurando legibilidad sin importar el color de fondo aleatorio.
